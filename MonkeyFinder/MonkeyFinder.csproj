@@ -62,9 +62,6 @@
 	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
 	</ItemGroup>
 	<ItemGroup>
-	  <MauiXaml Update="View\DetailsPage.xaml">
-	    <SubType></SubType>
-	  </MauiXaml>
 	  <MauiXaml Condition=" '$(EnableDefaultXamlItems)' == 'true' " Update="View\MainPage.xaml">
 	    <SubType>Designer</SubType>
 	  </MauiXaml>
