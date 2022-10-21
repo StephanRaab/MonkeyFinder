@@ -1,4 +1,31 @@
 ﻿<Properties StartupConfiguration="{C38FFC45-32FC-4339-957F-BC50111FD7F1}|Default">
-  <MonoDevelop.Ide.ItemProperties.MonkeyFinder FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.MonkeyFinder FirstBuild="True" PreferredExecutionTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Model/Monkey.cs">
+    <Files>
+      <File FileName="MainPage.xaml.cs" />
+      <File FileName="MainPage.xaml" Line="1" Column="1" />
+      <File FileName="View/DetailsPage.xaml" Line="1" Column="1" />
+      <File FileName="ViewModel/BaseViewModel.cs" Line="1" Column="1" />
+      <File FileName="ViewModel/MonkeyDetailsViewModel.cs" Line="1" Column="1" />
+      <File FileName="ViewModel/MonkeysViewModel.cs" Line="1" Column="1" />
+      <File FileName="Services/MonkeyService.cs" Line="1" Column="1" />
+      <File FileName="Model/Monkey.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MonkeyFinder" expanded="True">
+            <Node name="MonkeyFinder" expanded="True" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
 </Properties>
