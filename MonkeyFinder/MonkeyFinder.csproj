@@ -45,4 +45,20 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Remove="Services\" />
+	  <None Remove="Model\" />
+	  <None Remove="CommunityToolkit.Mvvm" />
+	  <None Remove="View\" />
+	  <None Remove="ViewModel\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Services\" />
+	  <Folder Include="Model\" />
+	  <Folder Include="View\" />
+	  <Folder Include="ViewModel\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
+	</ItemGroup>
 </Project>
