@@ -1,7 +1,7 @@
 ﻿using System;
 namespace MonkeyFinder.ViewModel
 {
-	public class MonkeysViewModel
+	public partial class MonkeysViewModel: BaseViewModel
 	{
 		public MonkeysViewModel()
 		{
