@@ -1,48 +1,21 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using CommunityToolkit.Mvvm.ComponentModel;
+using IntelliJ.Lang.Annotations;
 
 namespace MonkeyFinder.ViewModel
 {
-    public class BaseViewModel : INotifyPropertyChanged
+    public partial class BaseViewModel : ObservableObject
     {
-        string title;
+        [ObservableProperty]
+        [NotifyPropertyChangedFor(nameof(IsNotBusy))]
         bool isBusy;
 
-        public string Title
-        {
-            get => title;
-            set
-            {
-                if (title == value)
-                    return;
-
-                title = value;
-                OnPropertyChanged();
-            }
-        }
-
-        public bool IsBusy
-        {
-            get => isBusy;
-            set
-            {
-                if (isBusy == value)
-                    return;
-
-                isBusy = value;
-                OnPropertyChanged();
-                OnPropertyChanged(nameof(IsNotBusy));
-            }
-        }
+        [ObservableProperty]
+        string title;
 
         public bool IsNotBusy => !IsBusy;
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        public void OnPropertyChanged([CallerMemberName] string name = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
-        }
     }
 }
 
