@@ -12,7 +12,6 @@ public class MonkeyService
 		httpClient = new HttpClient();
 	}
 
-
 	List<Monkey> monkeyList = new List<Monkey>();
 	public async Task<List<Monkey>> GetMonkeys()
 	{

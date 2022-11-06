@@ -6,6 +6,43 @@
              x:DataType="viewmodel:MonkeysViewModel"
              Title="{Binding Title}"
              x:Class="MonkeyFinder.MainPage">
+    <Grid ColumnDefinitions="*,*" ColumnSpacing="5" RowDefinitions="*, auto" RowSpacing="0">
+        <CollectionView Grid.ColumnSpan="2"
+                        ItemsSource="{Binding Monkeys}" SelectionMode="None">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:Monkey">
+                    <Grid Padding="6">
+                        <Frame HeightRequest="125" Padding="0">
+                            <Grid Padding="0" ColumnDefinitions="125,*">
+                              <Image Aspect="AspectFill"
+                                     Source="{Binding Image}"
+                                     WidthRequest="125"
+                                     HeightRequest="125"/>
+                                <VerticalStackLayout Grid.Column="1" Padding="10"
+                                                     VerticalOptions="Center">
 
+                                     <Label Text="{Binding Name}" FontSize="Title" FontAttributes="Bold"/>
+                                    <Label Text="{Binding Location}" FontSize="Subtitle"/>
+
+                                </VerticalStackLayout>
+
+
+                            </Grid>
+                        </Frame>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <Button Text="Get Monkeys" Grid.Row="1" Margin="8"
+                Command="{Binding GetMonkeysCommand}"
+                IsEnabled="{Binding IsNotBusy}"/>
+        <Button Text="Something" Grid.Row="1" Grid.Column="1" Margin="8"/>
+        <ActivityIndicator
+            IsVisible="{Binding IsBusy}"
+            IsRunning="{Binding IsBusy}"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="CenterAndExpand"
+            Grid.RowSpan="2"
+            Grid.ColumnSpan="2"/>
+    </Grid>
 </ContentPage>
-
