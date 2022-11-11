@@ -21,12 +21,13 @@
                                 <VerticalStackLayout Grid.Column="1" Padding="10"
                                                      VerticalOptions="Center">
 
-                                     <Label Text="{Binding Name}" FontSize="Title" FontAttributes="Bold"/>
-                                    <Label Text="{Binding Location}" FontSize="Subtitle"/>
+                                    <Label Text="{Binding Name}"
+                                           FontSize="Title"
+                                           FontAttributes="Bold"/>
+                                    <Label Text="{Binding Location}"
+                                           FontSize="Subtitle"/>
 
                                 </VerticalStackLayout>
-
-
                             </Grid>
                         </Frame>
                     </Grid>
