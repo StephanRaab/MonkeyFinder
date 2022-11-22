@@ -8,11 +8,17 @@
              x:Class="MonkeyFinder.MainPage">
     <Grid ColumnDefinitions="*,*" ColumnSpacing="5" RowDefinitions="*, auto" RowSpacing="0">
         <CollectionView Grid.ColumnSpan="2"
-                        ItemsSource="{Binding Monkeys}" SelectionMode="None">
+                        BackgroundColor="Transparent"
+                        ItemsSource="{Binding Monkeys}"
+                        SelectionMode="None">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="model:Monkey">
                     <Grid Padding="6">
                         <Frame HeightRequest="125" Padding="0">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer CommandParameter="{Binding .}"
+                                                      Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MonkeysViewModel}},Path=GoToDetailsCommand}"/>
+                            </Frame.GestureRecognizers>
                             <Grid Padding="0" ColumnDefinitions="125,*">
                               <Image Aspect="AspectFill"
                                      Source="{Binding Image}"
@@ -26,7 +32,6 @@
                                            FontAttributes="Bold"/>
                                     <Label Text="{Binding Location}"
                                            FontSize="Subtitle"/>
-
                                 </VerticalStackLayout>
                             </Grid>
                         </Frame>
@@ -37,7 +42,7 @@
         <Button Text="Get Monkeys" Grid.Row="1" Margin="8"
                 Command="{Binding GetMonkeysCommand}"
                 IsEnabled="{Binding IsNotBusy}"/>
-        <Button Text="Something" Grid.Row="1" Grid.Column="1" Margin="8"/>
+        <!--<Button Text="Something" Grid.Row="1" Grid.Column="1" Margin="8"/>-->
         <ActivityIndicator
             IsVisible="{Binding IsBusy}"
             IsRunning="{Binding IsBusy}"

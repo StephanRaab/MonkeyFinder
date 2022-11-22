@@ -65,6 +65,9 @@
 	  <MauiXaml Condition=" '$(EnableDefaultXamlItems)' == 'true' " Update="View\MainPage.xaml">
 	    <SubType>Designer</SubType>
 	  </MauiXaml>
+	  <MauiXaml Update="View\DetailsPage.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
 	</ItemGroup>
 	<ItemGroup>
 	  <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="View\MainPage.xaml.cs">

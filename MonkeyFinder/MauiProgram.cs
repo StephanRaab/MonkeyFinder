@@ -1,6 +1,7 @@
 ﻿namespace MonkeyFinder;
 using MonkeyFinder.Services;
 using MonkeyFinder.ViewModel;
+using MonkeyFinder.View;
 
 public static class MauiProgram
 {
@@ -16,8 +17,12 @@ public static class MauiProgram
 			});
 
         builder.Services.AddSingleton<MonkeyService>();
+
         builder.Services.AddSingleton<MonkeysViewModel>();
-		builder.Services.AddSingleton<MainPage>();
+        builder.Services.AddTransient<MonkeyDetailsViewModel>(); //add transient, we're opening a new page every time
+
+        builder.Services.AddSingleton<MainPage>();
+        builder.Services.AddTransient<DetailsPage>();
 
         return builder.Build();
 	}
