@@ -12,4 +12,3 @@ namespace MonkeyFinder.Model
 		public double Longitude { get; set; }
 	}
 }
-

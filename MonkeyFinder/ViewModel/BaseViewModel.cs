@@ -1,8 +1,4 @@
-﻿using System;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
-using CommunityToolkit.Mvvm.ComponentModel;
-using IntelliJ.Lang.Annotations;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace MonkeyFinder.ViewModel
 {

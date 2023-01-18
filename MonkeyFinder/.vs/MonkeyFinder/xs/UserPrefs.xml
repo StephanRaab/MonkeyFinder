@@ -1,28 +1,32 @@
 ﻿<Properties StartupConfiguration="{C38FFC45-32FC-4339-957F-BC50111FD7F1}|Default">
-  <MonoDevelop.Ide.ItemProperties.MonkeyFinder FirstBuild="True" PreferredExecutionTarget="MyAppleMacCatalystID" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Model/Monkey.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.nexus_5x_-_api_33" />
+  <MonoDevelop.Ide.ItemProperties.MonkeyFinder PreferredExecutionTarget="Android.nexus_5x_-_api_33" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MauiProgram.cs">
     <Files>
-      <File FileName="MainPage.xaml.cs" />
-      <File FileName="MainPage.xaml" Line="1" Column="1" />
-      <File FileName="View/DetailsPage.xaml" Line="1" Column="1" />
-      <File FileName="ViewModel/BaseViewModel.cs" Line="1" Column="1" />
-      <File FileName="ViewModel/MonkeyDetailsViewModel.cs" Line="1" Column="1" />
-      <File FileName="ViewModel/MonkeysViewModel.cs" Line="1" Column="1" />
-      <File FileName="Services/MonkeyService.cs" Line="1" Column="1" />
-      <File FileName="Model/Monkey.cs" Line="1" Column="1" />
+      <File FileName="View/DetailsPage.xaml" Line="14" Column="61" />
+      <File FileName="ViewModel/BaseViewModel.cs" Line="3" Column="33" />
+      <File FileName="ViewModel/MonkeyDetailsViewModel.cs" />
+      <File FileName="ViewModel/MonkeysViewModel.cs" Line="47" Column="65" />
+      <File FileName="Services/MonkeyService.cs" />
+      <File FileName="Model/Monkey.cs" Line="14" Column="2" />
+      <File FileName="MauiProgram.cs" Line="21" Column="59" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MonkeyFinder" expanded="True">
-            <Node name="MonkeyFinder" expanded="True" selected="True" />
+            <Node name="MonkeyFinder" expanded="True">
+              <Node name="Model" expanded="True" />
+              <Node name="View" expanded="True" />
+              <Node name="ViewModel" expanded="True" />
+              <Node name="MauiProgram.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
